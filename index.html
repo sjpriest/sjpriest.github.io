@@ -1,45 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-h1 {text-align: center;}
-h2 {text-align: center;}
-p {text-align: center;}
-div {text-align: center;}
-button {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 25%;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ski orthern New England</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 </head>
-
 <body>
-
-<h2>Welcome to the</h2>
-
-<h1>Crypto Prediction Sphere</h1>
-
-<img src="CPS600.png" alt="A sphere" class="center">
-
-<p>Do you dare to ask your question?</p>
-
-<button onclick="pickAnswer()">Speak your truth</button>
-
-<script language="javascript">
-	function pickAnswer(){
-		alert("Hello");
-
-	}
-
-</script>
-
+    <h1>Ski Northern New England</h1>
+    <div class="filters">
+        <button id="vtButton">Vermont</button>
+        <button id="nhButton">New Hampshire</button>
+        <button id="meButton">Maine</button>
+    </div>
+    <div id="map-container">
+        <div id="map"></div>
+        <div id="sidebar">
+            <div id="sidebar-content">
+                <!-- Resort information will be inserted here -->
+            </div>
+            <button id="close-sidebar">Close</button>
+        </div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="scripts.js"></script>
 </body>
-
 </html>

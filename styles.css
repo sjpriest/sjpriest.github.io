@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin: 0;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#map-container {
+    height: 90vh;
+    width: 100%;
+    position: relative;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+}
+
+/* Add the following CSS styles */
+#sidebar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    border-left: 1px solid #ccc;
+    overflow-y: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+    z-index: 1000;
+}
+
+.sidebar-image {
+    width: 100%;
+    height: 200px; /* Adjust the height according to your preference */
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 10px;
+}
+
+#sidebar-content {
+    margin-bottom: 20px;
+}
+
+#close-sidebar {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
